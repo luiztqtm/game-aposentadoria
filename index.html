@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do INPS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jogo do INPS</h1>
+        <p id="message">Tente aposentar sem morrer de raiva</p>
+    </header>
+    <main>
+        <div id="status" class="container">
+            <img src="images/happy-guy.jpg" alt="avatar do jogador" id="avatar">
+            <ul>
+                <li>
+                    <label for="stress"><strong>Stress Acumulado: </strong></label>
+                    <meter id="stress" value="0" min="0" optimum="0" low="30" high="70" max="100"></meter> 
+                </li>
+                <li>
+                    <strong>Tempo decorrido: </strong><span id="time">00</span> dias
+                </li>
+            </ul>
+        </div>
+        <div id="card" class="container">
+            <h3 id="card-title">O requerimento</h2>
+            <p id="card-story">Hoje é seu aniversário. Parabéns. Você agora tem idade para se aposentar, então logo cedo dá entrada na aposentadoria pelo site do INSS. Depois de preencher os seus dados e anexar uma cópia digitalizada da sua carteira de identidade você recebe um número de protocolo para poder acompanhar o andamento do seu pedido.</p>
+        </div>
+        <div id="options">
+            <button id="wait">Aguardar uma comunicação</button>
+            <button id="active">Entrar no site diariamente</button>
+        </div>
+    </main>
+</body>
+</html>
